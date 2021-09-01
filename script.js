@@ -71,15 +71,16 @@ function mod(num1, num2) {
     return num1%num2;
 }
 */
-let valueinput, tries=0;
+let valueinput, tries=5;
 var x=Math.floor(Math.random()*100);
 function enter(){
 valueinput = document.getElementById("entry").value;
     }
 function guess(valueinput){
-    if(valueinput==x) {window.alert("Correct! Took you " + ++tries + " tries!");}
-    else if(valueinput>x) {window.alert("Try lower."); tries++;}
-    else {window.alert("Try higher."); tries++;}
+    if (tries<=0) {window.alert("You lost! No more lives left!");}
+    else if(valueinput==x) {window.alert("Correct! You had " + tries + " lives left!");}
+    else if(valueinput>x) {window.alert("Try lower. You have "+ --tries + " left.");}
+    else {window.alert("Try higher. You have "+ --tries + " left.");}
 }
 
 function fail(x) {
