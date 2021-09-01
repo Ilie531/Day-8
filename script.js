@@ -77,9 +77,13 @@ function enter(){
 valueinput = document.getElementById("entry").value;
     }
 function guess(valueinput){
-    if(valueinput==x) {window.alert("Correct! Took you " + tries + " tries!");}
+    if(valueinput==x) {window.alert("Correct! Took you " + ++tries + " tries!");}
     else if(valueinput>x) {window.alert("Try lower."); tries++;}
     else {window.alert("Try higher."); tries++;}
+}
+
+function fail(x) {
+    window.alert("The number is "+ x);
 }
 
 //exercitiu cu un input sa gasesti numarul random
