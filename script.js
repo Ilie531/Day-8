@@ -48,7 +48,7 @@ x.reverse()//reverse of sort
 
 */
 //exercise: make 5 different functions. Make it a sum, rest, division, multiplication, module, rest, division make 4 buttons
-var num1=15;
+/*var num1=15;
 var num2=4;
 
 function sum(num1, num2) {
@@ -70,4 +70,16 @@ function mult(num1, num2) {
 function mod(num1, num2) {
     return num1%num2;
 }
+*/
+let valueinput, tries=0;
+var x=Math.floor(Math.random()*100);
+function enter(){
+valueinput = document.getElementById("entry").value;
+    }
+function guess(valueinput){
+    if(valueinput==x) {tries++; window.alert("Correct! Took you " + tries + " tries!");}
+    else if(valueinput>x) {window.alert("Try lower."); tries++;}
+    else {window.alert("Try higher."); tries++;}
+}
 
+//exercitiu cu un input sa gasesti numarul random
