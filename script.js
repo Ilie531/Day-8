@@ -77,7 +77,7 @@ function enter(){
 valueinput = document.getElementById("entry").value;
     }
 function guess(valueinput){
-    if(valueinput==x) {tries++; window.alert("Correct! Took you " + tries + " tries!");}
+    if(valueinput==x) {window.alert("Correct! Took you " + tries + " tries!");}
     else if(valueinput>x) {window.alert("Try lower."); tries++;}
     else {window.alert("Try higher."); tries++;}
 }
