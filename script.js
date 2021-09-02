@@ -33,7 +33,7 @@ var x={"Someone",210,True,"chachacha"}
 var y = {1,2,3,4}
 toString
 join(*)//select the separator between the content and array --> Someone * 210 * True * chachacha
-x.pop()
+x.pop() //take out the last element from the array
 x.shift()//like pop, but the start
 x.unshift()//add element in the first position in the array
 x.push()//gonna add an element at the end
